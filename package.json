@@ -24,13 +24,13 @@
   },
   "homepage": "https://github.com/qbreader/qb-answer-checker#readme",
   "devDependencies": {
+    "jquery-csv": "^1.0.40",
     "semistandard": "^17.0.0",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
     "damerau-levenshtein-js": "^1.1.8",
-    "jquery-csv": "^1.0.40",
     "number-to-words": "^1.2.4",
     "roman-numerals": "^0.3.2",
     "stemmer": "^2.0.1"
