@@ -47,6 +47,10 @@ function checkAnswer (answerline, givenAnswer, strictness = 7, verbose = false) 
     answerline = answerline.replace(/<b>/g, '<u>').replace(/<\/b>/g, '</u>');
   }
 
+  if (answerline.includes('[') && !answerline.includes(']')) {
+    answerline = answerline + ']';
+  }
+
   const isFormattedAnswerline = /<u>/.test(answerline);
 
   answerline = normalizeString(answerline);
